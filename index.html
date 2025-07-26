@@ -12,7 +12,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">DIU Routine Viewer Support</h1>
             <ul class="flex space-x-4">
-                <li><a href="https://evaan.netlify.app/" class="hover:text-yellow-400">Back to Portfolio</a></li>
+                <li><a href="https://evaanrahman.com" class="hover:text-yellow-400">Back to Portfolio</a></li>
             </ul>
         </div>
     </nav>
@@ -20,18 +20,25 @@
     <section id="support" class="container mx-auto p-5">
         <h2 class="text-3xl font-bold mb-5">Support for DIU Routine Viewer</h2>
         <p class="mb-4">Welcome to the support page for the DIU Routine Viewer app, designed for Daffodil International University students and faculty. Whether you’re having trouble finding class schedules, empty rooms, or teacher profiles, we’re here to help.</p>
-        
-        <div class="bg-gray-800 p-8 rounded-lg max-w-lg w-full mx-auto">
-            <h3 class="font-bold text-xl mb-4">Contact Details</h3>
-            <p class="mb-2"><strong>Email:</strong> <a href="mailto:diuroutineviewer@gmail.com" class="link link-primary">diuroutineviewer@gmail.com</a></p>
-            <p class="mb-2"><strong>Phone:</strong> +8801847475487</p>
-            <p class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/evaan321" class="link link-primary">evaan321</a></p>
-            <p class="mb-4"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abdullah-rahman-evaan-0544392a5/" class="link link-primary">Abdullah Rahman Evaan</a></p>
-            <div class="flex justify-end">
-                <a href="#faq" class="btn btn-primary">View FAQs</a>
-            </div>
+        <div class="text-center">
+            <button class="btn btn-primary" onclick="openContactModal()">Contact Support</button>
         </div>
     </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-gray-800 text-gray-100 p-8 rounded-lg max-w-lg w-full">
+            <h2 class="font-bold text-xl mb-4">Contact Details</h2>
+            <p class="mb-2"><strong>Phone:</strong> +8801847475487</p>
+            <p class="mb-2"><strong>Email:</strong> <a href="mailto:evaanrahman2@gmail.com" class="link link-primary">evaanrahman2@gmail.com</a></p>
+            <p class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/evaan321" class="link link-primary">evaan321</a></p>
+            <p class="mb-4"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abdullah-rahman-evaan-0544392a5/" class="link link-primary">Abdullah Rahman Evaan</a></p>
+            <div class="flex justify-end mt-4 space-x-2">
+                <a href="https://drive.google.com/file/d/1HiH9jFKeVClNo0gIV7kIJprsjhn9Fli2/view?usp=drive_link" class="btn btn-secondary">Download Resume</a>
+                <button class="btn btn-primary" onclick="closeContactModal()">Close</button>
+            </div>
+        </div>
+    </div>
 
     <section id="faq" class="container mx-auto p-5 bg-gray-800 rounded-lg">
         <h2 class="text-3xl font-bold mb-5">Frequently Asked Questions</h2>
@@ -58,28 +65,39 @@
     <section id="privacy" class="container mx-auto p-5">
         <h2 class="text-3xl font-bold mb-5">Privacy Policy</h2>
         <p class="mb-4">Effective Date: July 26, 2025</p>
-        <p class="mb-4">DIU Routine Viewer, developed by Md Abdullah Rahman Evaan, is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our app.</p>
+        <p class="mb-4">DIU Routine Viewer, developed by Evaan Rahman, is committed to protecting your privacy. This Privacy Policy outlines how we handle information when you use our app, ensuring transparency and compliance with applicable regulations.</p>
         
         <h3 class="text-2xl font-bold mb-3">Information We Collect</h3>
-        <p class="mb-4">DIU Routine Viewer does not collect or store personal data. The app allows users to input section codes (e.g., “61_N”) or teacher initials (e.g., “MM”) to fetch class schedules, empty room availability, or teacher profiles from Daffodil International University’s servers. This data is not stored locally or transmitted to third parties.</p>
+        <p class="mb-4">DIU Routine Viewer does not collect, store, or process personal data. The app allows users to input section codes (e.g., “61_N”) or teacher initials (e.g., “MM”) to retrieve class schedules, empty room availability, or teacher profiles from Daffodil International University’s servers. These inputs are used solely for querying and are not stored locally or shared with third parties.</p>
         
         <h3 class="text-2xl font-bold mb-3">How We Use Information</h3>
-        <p class="mb-4">The section codes and teacher initials you enter are used solely to query DIU’s servers for relevant schedule or profile information. No personal information is collected, stored, or shared by the app.</p>
+        <p class="mb-4">Section codes and teacher initials entered in the app are used exclusively to fetch relevant data from DIU’s servers. No personal information is collected, stored, or transmitted beyond this purpose.</p>
         
         <h3 class="text-2xl font-bold mb-3">Third-Party Services</h3>
-        <p class="mb-4">The app communicates with DIU’s servers to retrieve schedule and profile data. We do not control these servers, and their data handling is governed by DIU’s privacy policies.</p>
+        <p class="mb-4">The app communicates with Daffodil International University’s servers to retrieve schedule and profile information. Data handling by these servers is governed by DIU’s privacy policies, which are outside our control.</p>
         
         <h3 class="text-2xl font-bold mb-3">Data Security</h3>
-        <p class="mb-4">Since no personal data is stored by the app, there is no risk of data breaches from our end. We use standard security practices to ensure the app operates safely.</p>
+        <p class="mb-4">As the app does not store personal data, there is no risk of data breaches from our application. We implement industry-standard security practices to ensure safe operation of the app.</p>
+        
+        <h3 class="text-2xl font-bold mb-3">Changes to This Policy</h3>
+        <p class="mb-4">We may update this Privacy Policy to reflect changes in the app or legal requirements. The latest version will always be available on this page.</p>
         
         <h3 class="text-2xl font-bold mb-3">Contact Us</h3>
-        <p class="mb-4">For questions about this Privacy Policy or the app, contact us at <a href="mailto:diuroutineviewer@gmail.com" class="link link-primary">diuroutineviewer@gmail.com</a>.</p>
-        
-        <p class="mb-4">We may update this Privacy Policy as needed. Check this page for the latest version.</p>
+        <p class="mb-4">For questions about this Privacy Policy or the DIU Routine Viewer app, please contact us at <a href="mailto:evaanrahman2@gmail.com" class="link link-primary">evaanrahman2@gmail.com</a>.</p>
     </section>
 
     <footer class="bg-gray-800 p-4 mt-5 text-center">
-        <p>&copy; 2025 Evaan. All rights reserved.</p>
+        <p>&copy; 2025 Evaan Rahman. All rights reserved.</p>
     </footer>
+
+    <script>
+        function openContactModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+        }
+
+        function closeContactModal() {
+            document.getElementById('contactModal').classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
